@@ -48,6 +48,9 @@ return htmlTemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'login.html'));
 });
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login.php'));
+});
 
 var counter = 0;
 app.get('/counter',function(req, res){
